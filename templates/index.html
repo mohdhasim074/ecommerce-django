@@ -1,5 +1,5 @@
 {% extends "base.html" %} 
-
+{% load static %}
 {% block title %} Home {% endblock title %} 
 
 {% block  body %}
@@ -15,13 +15,13 @@
   <div class="carousel-inner " style=" width:1080px; height:360px; position: relative;">
     
    <div class="carousel-item active">
-      <img src="/static/images/nt.jpg" class="d-block w-100  "  alt="...">
+      <img src="{% static 'images/nt.jpg' %}" class="d-block w-100  "  alt="...">
     </div>
     <div class="carousel-item ">
-      <img src="/static/images/nt0.jpg" class="d-block  w-100" alt="...">
+      <img src="{% static 'images/nt0.jpg' %}" class="d-block  w-100" alt="...">
     </div>
     <div class="carousel-item ">
-      <img src="/static/images/nature01.jpg" class="d-block  w-100" alt="...">
+      <img src="{% static 'images/nature01.jpg' %}" class="d-block  w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
