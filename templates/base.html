@@ -1,3 +1,5 @@
+
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,8 +11,13 @@
   <body>
     {% include "navbar.html" %}
      {% block body %}{% endblock body %}
+
     <div class="container">
+       <div class="carousel-item active">
+      <img src="{% static 'images/nt.jpg' %}" class="d-block w-100  "  alt="...">
+       </div>
       <p>
+        
         Lorem ipsum, dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex maxime deserunt vitae quas possimus, accusamus qui! Quasi quam praesentium aspernatur, sapiente necessitatibus consequuntur dignissimos similique magni omnis asperiores quos suscipit ut nisi, explicabo quia. Quae, sint expedita? Excepturi, libero laborum? consectetur adipisicing elit. Suscipit
         tempora expedita iste ea, dolor omnis asperiores! Fuga ipsa itaque ab.
       </p>
